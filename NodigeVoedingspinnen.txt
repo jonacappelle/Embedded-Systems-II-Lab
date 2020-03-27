@@ -1,2 +1,35 @@
 Gelieve hier aan te vullen wie welke pinnen nodig heeft, hoeveel, welke , ... extra details
 
+---------------------------
+	MAIN BOARD
+---------------------------
+- TX
+- RX
+- NRESET
+- SWCLK
+- SWDIO
+- VDD
+- GND
+
+- LED?
+
+---------------------------
+	POWER BOARD
+---------------------------
+- 3.3V (MCU board)
+- GND
+- V_BATT
+
+
+---------------------------
+	COMPASS
+---------------------------
+- INT
+- SDA
+- SCL
+- VDD
+- GND
+
+---------------------------
+	RFID
+---------------------------
