@@ -1,4 +1,5 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jonacappelle/Embedded-Systems-II-Lab.svg)
+![Target device](https://img.shields.io/badge/target%20device-EFM32HG322F64G-yellow.svg)
 ![Github contributors](https://img.shields.io/github/contributors/jonacappelle/Embedded-Systems-II-Lab)
 # LAB: Embedded Systems II
 
