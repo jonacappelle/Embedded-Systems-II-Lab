@@ -4,7 +4,7 @@
 
 ## HARDWARE
 
-[Main board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)
+[Main board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)  
 [Power board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)
 
 
