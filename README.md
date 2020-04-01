@@ -8,9 +8,6 @@
 [Main board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)  
 [Power board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)
 
-
-![alt text](https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/VoedingDesign_pcb/renders/top.svg)
-
 <p align="center">
   <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/VoedingDesign_pcb/renders/top.svg">
 </p>
