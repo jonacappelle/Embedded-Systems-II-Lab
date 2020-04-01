@@ -9,6 +9,10 @@
 [Power board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)
 
 
+![alt text](https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/VoedingDesign_pcb/renders/top.svg)
+
+
+
 ### Main board
 
 - EFM32HG322F64G-C-QFP48R
