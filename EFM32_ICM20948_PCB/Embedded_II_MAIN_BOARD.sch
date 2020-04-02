@@ -8496,7 +8496,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="TP16" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1"/>
 <part name="BATT_V" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="BATT_V"/>
 <part name="SOLAR_V" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="SOLAR_V"/>
-<part name="LORA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X5" device="" package3d_urn="urn:adsk.eagle:package:22469/2" value="LORA"/>
 <part name="EXTRA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X5" device="" package3d_urn="urn:adsk.eagle:package:22469/2" value="EXTRA"/>
 <part name="TX/RX_OPT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="TX/RX_OPT"/>
 <part name="DBG_OPT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="DBG_OPT"/>
@@ -8511,13 +8510,12 @@ Source: AVX .. aphvc.pdf</description>
 <part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1"/>
 <part name="TP18" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1"/>
 <part name="TP19" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1"/>
-<part name="TP20" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1"/>
 <part name="GND6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1" value="TPTP20SQ"/>
 <part name="GND_1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ" package3d_urn="urn:adsk.eagle:package:27980/1" value="TPTP20SQ"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="10u"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$4" library="project" deviceset="RN2483" device=""/>
+<part name="U4" library="project" deviceset="RN2483" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
@@ -8531,6 +8529,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="LORA_RESET" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="LORA_RESET"/>
 <part name="LORA_RX" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="LORA_RX"/>
 <part name="LORA_TX" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="LORA_TX"/>
+<part name="EXTRA1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="EXTRA"/>
 </parts>
 <sheets>
 <sheet>
@@ -9047,10 +9046,6 @@ AUX_DA not needed</text>
 <attribute name="NAME" x="266.7" y="-294.64" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="266.7" y="-289.56" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
-<instance part="LORA" gate="A" x="38.1" y="-330.2" smashed="yes">
-<attribute name="NAME" x="31.75" y="-321.945" size="1.778" layer="95"/>
-<attribute name="VALUE" x="31.75" y="-340.36" size="1.778" layer="96"/>
-</instance>
 <instance part="EXTRA" gate="A" x="0" y="-330.2" smashed="yes">
 <attribute name="NAME" x="-6.35" y="-321.945" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-6.35" y="-340.36" size="1.778" layer="96"/>
@@ -9106,10 +9101,6 @@ AUX_DA not needed</text>
 <attribute name="NAME" x="209.55" y="-300.99" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="212.09" y="-303.53" size="1.778" layer="97"/>
 </instance>
-<instance part="TP20" gate="G$1" x="170.18" y="-304.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="168.91" y="-306.07" size="1.778" layer="95" rot="R90"/>
-<attribute name="TP_SIGNAL_NAME" x="171.45" y="-303.53" size="1.778" layer="97" rot="R90"/>
-</instance>
 <instance part="GND6" gate="G$1" x="365.76" y="-370.84" smashed="yes">
 <attribute name="NAME" x="364.49" y="-369.57" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="367.03" y="-372.11" size="1.778" layer="97"/>
@@ -9129,7 +9120,7 @@ AUX_DA not needed</text>
 <instance part="GND7" gate="1" x="452.12" y="-276.86" smashed="yes">
 <attribute name="VALUE" x="449.58" y="-279.4" size="1.778" layer="96"/>
 </instance>
-<instance part="U$4" gate="G$1" x="515.62" y="-274.32" smashed="yes">
+<instance part="U4" gate="G$1" x="515.62" y="-274.32" smashed="yes">
 <attribute name="NAME" x="510.54" y="-260.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="510.54" y="-264.16" size="1.778" layer="96"/>
 </instance>
@@ -9178,6 +9169,10 @@ AUX_DA not needed</text>
 <instance part="LORA_TX" gate="G$1" x="556.26" y="-279.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="558.8" y="-281.94" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="558.8" y="-276.86" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+</instance>
+<instance part="EXTRA1" gate="G$1" x="106.68" y="-358.14" smashed="yes">
+<attribute name="NAME" x="100.33" y="-352.425" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.33" y="-363.22" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9400,7 +9395,7 @@ AUX_DA not needed</text>
 <junction x="467.36" y="-271.78"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="538.48" y1="-292.1" x2="541.02" y2="-292.1" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="541.02" y1="-292.1" x2="541.02" y2="-294.64" width="0.1524" layer="91"/>
@@ -10314,41 +10309,9 @@ AUX_DA not needed</text>
 <label x="177.8" y="-307.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LORA" gate="A" pin="3"/>
-<wire x1="35.56" y1="-330.2" x2="20.32" y2="-330.2" width="0.1524" layer="91"/>
-<label x="20.32" y="-330.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="LORA_RESET" gate="G$1" pin="1"/>
 <wire x1="563.88" y1="-274.32" x2="579.12" y2="-274.32" width="0.1524" layer="91"/>
 <label x="579.12" y="-274.32" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SENSOR_EN" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="PA9"/>
-<wire x1="175.26" y1="-302.26" x2="175.26" y2="-307.34" width="0.1524" layer="91"/>
-<label x="175.26" y="-307.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="LORA" gate="A" pin="2"/>
-<wire x1="35.56" y1="-327.66" x2="20.32" y2="-327.66" width="0.1524" layer="91"/>
-<label x="20.32" y="-327.66" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LORA_EN" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="PA8"/>
-<wire x1="172.72" y1="-302.26" x2="172.72" y2="-304.8" width="0.1524" layer="91"/>
-<label x="172.72" y="-307.34" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="TP20" gate="G$1" pin="TP"/>
-<wire x1="172.72" y1="-304.8" x2="172.72" y2="-307.34" width="0.1524" layer="91"/>
-<junction x="172.72" y="-304.8"/>
-</segment>
-<segment>
-<pinref part="LORA" gate="A" pin="1"/>
-<wire x1="35.56" y1="-325.12" x2="20.32" y2="-325.12" width="0.1524" layer="91"/>
-<label x="20.32" y="-325.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LORA_TX" class="0">
@@ -10361,11 +10324,6 @@ AUX_DA not needed</text>
 <pinref part="TP18" gate="G$1" pin="TP"/>
 <wire x1="215.9" y1="-292.1" x2="220.98" y2="-292.1" width="0.1524" layer="91"/>
 <junction x="215.9" y="-292.1"/>
-</segment>
-<segment>
-<pinref part="LORA" gate="A" pin="5"/>
-<wire x1="35.56" y1="-335.28" x2="20.32" y2="-335.28" width="0.1524" layer="91"/>
-<label x="20.32" y="-335.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="LORA_TX" gate="G$1" pin="1"/>
@@ -10385,11 +10343,6 @@ AUX_DA not needed</text>
 <label x="220.98" y="-294.64" size="1.27" layer="95" xref="yes"/>
 <pinref part="TP19" gate="G$1" pin="TP"/>
 <junction x="210.82" y="-304.8"/>
-</segment>
-<segment>
-<wire x1="35.56" y1="-332.74" x2="20.32" y2="-332.74" width="0.1524" layer="91"/>
-<pinref part="LORA" gate="A" pin="4"/>
-<label x="20.32" y="-332.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="LORA_RX" gate="G$1" pin="1"/>
@@ -10535,7 +10488,7 @@ AUX_DA not needed</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="RFH"/>
+<pinref part="U4" gate="G$1" pin="RFH"/>
 <wire x1="551.18" y1="-269.24" x2="548.64" y2="-269.24" width="0.1524" layer="91"/>
 <wire x1="548.64" y1="-269.24" x2="538.48" y2="-269.24" width="0.1524" layer="91"/>
 <wire x1="548.64" y1="-264.16" x2="548.64" y2="-269.24" width="0.1524" layer="91"/>
@@ -10556,14 +10509,14 @@ AUX_DA not needed</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="UART_RX"/>
+<pinref part="U4" gate="G$1" pin="UART_RX"/>
 <wire x1="538.48" y1="-276.86" x2="571.5" y2="-276.86" width="0.1524" layer="91"/>
 <pinref part="LORA_RX" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="UART_TX"/>
+<pinref part="U4" gate="G$1" pin="UART_TX"/>
 <wire x1="538.48" y1="-279.4" x2="551.18" y2="-279.4" width="0.1524" layer="91"/>
 <pinref part="LORA_TX" gate="G$1" pin="2"/>
 <wire x1="551.18" y1="-279.4" x2="553.72" y2="-279.4" width="0.1524" layer="91"/>
@@ -10572,7 +10525,7 @@ AUX_DA not needed</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="RESET°"/>
+<pinref part="U4" gate="G$1" pin="RESET°"/>
 <wire x1="538.48" y1="-274.32" x2="553.72" y2="-274.32" width="0.1524" layer="91"/>
 <pinref part="LORA_RESET" gate="G$1" pin="2"/>
 </segment>
@@ -10597,10 +10550,34 @@ AUX_DA not needed</text>
 <label x="452.12" y="-256.54" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="VDD"/>
+<pinref part="U4" gate="G$1" pin="VDD"/>
 <wire x1="538.48" y1="-289.56" x2="558.8" y2="-289.56" width="0.1524" layer="91"/>
 <pinref part="LORA_VDD" gate="G$1" pin="2"/>
 <label x="548.64" y="-289.56" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="PA8" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="PA8"/>
+<wire x1="172.72" y1="-302.26" x2="172.72" y2="-307.34" width="0.1524" layer="91"/>
+<label x="172.72" y="-307.34" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="EXTRA1" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="-355.6" x2="93.98" y2="-355.6" width="0.1524" layer="91"/>
+<label x="93.98" y="-355.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PA9" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="PA9"/>
+<wire x1="175.26" y1="-302.26" x2="175.26" y2="-307.34" width="0.1524" layer="91"/>
+<label x="175.26" y="-307.34" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="EXTRA1" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="-358.14" x2="93.98" y2="-358.14" width="0.1524" layer="91"/>
+<label x="93.98" y="-358.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
