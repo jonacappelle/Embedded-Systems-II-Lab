@@ -6,6 +6,15 @@
 ## HARDWARE
 
 [Main board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)  
+
+<p align="center">
+  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/EFM32_ICM20948_PCB/svg_renders/top.svg">
+</p>
+<p align="center">
+  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/EFM32_ICM20948_PCB/svg_renders/bottom.svg">
+</p>
+
+
 [Power board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)
 
 <p align="center">
