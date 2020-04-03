@@ -8515,7 +8515,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="10u"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$4" library="project" deviceset="RN2483" device=""/>
+<part name="U4" library="project" deviceset="RN2483" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2"/>
@@ -9120,7 +9120,7 @@ AUX_DA not needed</text>
 <instance part="GND7" gate="1" x="452.12" y="-276.86" smashed="yes">
 <attribute name="VALUE" x="449.58" y="-279.4" size="1.778" layer="96"/>
 </instance>
-<instance part="U$4" gate="G$1" x="515.62" y="-274.32" smashed="yes">
+<instance part="U4" gate="G$1" x="515.62" y="-274.32" smashed="yes">
 <attribute name="NAME" x="510.54" y="-260.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="510.54" y="-264.16" size="1.778" layer="96"/>
 </instance>
@@ -9395,7 +9395,7 @@ AUX_DA not needed</text>
 <junction x="467.36" y="-271.78"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="538.48" y1="-292.1" x2="541.02" y2="-292.1" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="541.02" y1="-292.1" x2="541.02" y2="-294.64" width="0.1524" layer="91"/>
@@ -10488,7 +10488,7 @@ AUX_DA not needed</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="RFH"/>
+<pinref part="U4" gate="G$1" pin="RFH"/>
 <wire x1="551.18" y1="-269.24" x2="548.64" y2="-269.24" width="0.1524" layer="91"/>
 <wire x1="548.64" y1="-269.24" x2="538.48" y2="-269.24" width="0.1524" layer="91"/>
 <wire x1="548.64" y1="-264.16" x2="548.64" y2="-269.24" width="0.1524" layer="91"/>
@@ -10509,14 +10509,14 @@ AUX_DA not needed</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="UART_RX"/>
+<pinref part="U4" gate="G$1" pin="UART_RX"/>
 <wire x1="538.48" y1="-276.86" x2="571.5" y2="-276.86" width="0.1524" layer="91"/>
 <pinref part="LORA_RX" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="UART_TX"/>
+<pinref part="U4" gate="G$1" pin="UART_TX"/>
 <wire x1="538.48" y1="-279.4" x2="551.18" y2="-279.4" width="0.1524" layer="91"/>
 <pinref part="LORA_TX" gate="G$1" pin="2"/>
 <wire x1="551.18" y1="-279.4" x2="553.72" y2="-279.4" width="0.1524" layer="91"/>
@@ -10525,7 +10525,7 @@ AUX_DA not needed</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="RESET°"/>
+<pinref part="U4" gate="G$1" pin="RESET°"/>
 <wire x1="538.48" y1="-274.32" x2="553.72" y2="-274.32" width="0.1524" layer="91"/>
 <pinref part="LORA_RESET" gate="G$1" pin="2"/>
 </segment>
@@ -10550,7 +10550,7 @@ AUX_DA not needed</text>
 <label x="452.12" y="-256.54" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="VDD"/>
+<pinref part="U4" gate="G$1" pin="VDD"/>
 <wire x1="538.48" y1="-289.56" x2="558.8" y2="-289.56" width="0.1524" layer="91"/>
 <pinref part="LORA_VDD" gate="G$1" pin="2"/>
 <label x="548.64" y="-289.56" size="1.778" layer="95" rot="R270" xref="yes"/>
