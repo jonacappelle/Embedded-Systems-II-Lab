@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -212,7 +212,7 @@
 <wire x1="-24.384" y1="-3.048" x2="-23.876" y2="-3.048" width="0.127" layer="25"/>
 <wire x1="-23.876" y1="-3.048" x2="-23.368" y2="-3.048" width="0.127" layer="25"/>
 <wire x1="-23.876" y1="-3.048" x2="-23.876" y2="-2.286" width="0.127" layer="25"/>
-<text x="-25.146" y="17.018" size="1.778" layer="25">MAIN PCB</text>
+<text x="-25.146" y="16.764" size="1.778" layer="25">MAIN PCB</text>
 <circle x="32.713165625" y="20.785025" radius="0.254" width="0.254" layer="26"/>
 <wire x1="31.552890625" y1="21.946190625" x2="33.838890625" y2="21.946190625" width="0.254" layer="26" curve="-104.250033"/>
 <wire x1="30.123709375" y1="23.46288125" x2="35.203709375" y2="23.46288125" width="0.254" layer="26" curve="-79.611142"/>

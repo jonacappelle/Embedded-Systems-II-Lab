@@ -236,6 +236,9 @@ I/O
 CLK
 !R!
 GND</text>
+<text x="20.828" y="-9.144" size="0.6096" layer="25">A9
+A8
+B11</text>
 </plain>
 <libraries>
 <library name="microbuilder">
