@@ -8496,7 +8496,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="TP16" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP10R" package3d_urn="urn:adsk.eagle:package:27959/1"/>
 <part name="BATT_V" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="BATT_V"/>
 <part name="SOLAR_V" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="SOLAR_V"/>
-<part name="EXTRA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X5" device="" package3d_urn="urn:adsk.eagle:package:22469/2" value="EXTRA"/>
 <part name="TX/RX_OPT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="TX/RX_OPT"/>
 <part name="DBG_OPT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="DBG_OPT"/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -8530,6 +8529,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="LORA_RX" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="LORA_RX"/>
 <part name="LORA_TX" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="LORA_TX"/>
 <part name="EXTRA1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2" value="EXTRA"/>
+<part name="EXTRA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2" value="EXTRA"/>
 </parts>
 <sheets>
 <sheet>
@@ -9046,10 +9046,6 @@ AUX_DA not needed</text>
 <attribute name="NAME" x="266.7" y="-294.64" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="266.7" y="-289.56" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
-<instance part="EXTRA" gate="A" x="0" y="-330.2" smashed="yes">
-<attribute name="NAME" x="-6.35" y="-321.945" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="-340.36" size="1.778" layer="96"/>
-</instance>
 <instance part="TX/RX_OPT" gate="G$1" x="-2.54" y="-299.72" smashed="yes">
 <attribute name="NAME" x="-8.89" y="-294.005" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-8.89" y="-304.8" size="1.778" layer="96"/>
@@ -9173,6 +9169,10 @@ AUX_DA not needed</text>
 <instance part="EXTRA1" gate="G$1" x="106.68" y="-358.14" smashed="yes">
 <attribute name="NAME" x="100.33" y="-352.425" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="-363.22" size="1.778" layer="96"/>
+</instance>
+<instance part="EXTRA" gate="A" x="0" y="-332.74" smashed="yes">
+<attribute name="NAME" x="-6.35" y="-324.485" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-6.35" y="-340.36" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10182,7 +10182,7 @@ AUX_DA not needed</text>
 <segment>
 <label x="-12.7" y="-335.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="-12.7" y1="-335.28" x2="-2.54" y2="-335.28" width="0.1524" layer="91"/>
-<pinref part="EXTRA" gate="A" pin="5"/>
+<pinref part="EXTRA" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="PC9" class="0">
@@ -10194,7 +10194,7 @@ AUX_DA not needed</text>
 <segment>
 <label x="-12.7" y="-327.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="-2.54" y1="-327.66" x2="-12.7" y2="-327.66" width="0.1524" layer="91"/>
-<pinref part="EXTRA" gate="A" pin="2"/>
+<pinref part="EXTRA" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="PF2" class="0">
@@ -10222,7 +10222,7 @@ AUX_DA not needed</text>
 <segment>
 <wire x1="-2.54" y1="-330.2" x2="-12.7" y2="-330.2" width="0.1524" layer="91"/>
 <label x="-12.7" y="-330.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="EXTRA" gate="A" pin="3"/>
+<pinref part="EXTRA" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="PF5" class="0">
@@ -10234,7 +10234,7 @@ AUX_DA not needed</text>
 <segment>
 <label x="-12.7" y="-332.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="-2.54" y1="-332.74" x2="-12.7" y2="-332.74" width="0.1524" layer="91"/>
-<pinref part="EXTRA" gate="A" pin="4"/>
+<pinref part="EXTRA" gate="A" pin="3"/>
 </segment>
 </net>
 <net name="DBPRINT_TX" class="0">
@@ -10583,6 +10583,10 @@ AUX_DA not needed</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,554.99,-267.515,C4,,,,,"/>
+<approved hash="113,1,554.99,-242.115,C5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

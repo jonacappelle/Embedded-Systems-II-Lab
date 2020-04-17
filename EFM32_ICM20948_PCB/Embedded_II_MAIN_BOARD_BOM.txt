@@ -1,0 +1,93 @@
+
+------------------------------------------------
+Team Turn Table BOM Main PCB: Kompas + uC + LoRa
+------------------------------------------------
+Dit is het minimaal aantal nodige componenten.
+Best enkele extras voorzien a.u.b.
+------------------------------------------------
+
+Qty Value                   Device                     Package                    Parts                                                                               Description                                                                                                                     DESCRIPTION                                                                                                                     HEIGHT MANUFACTURER_NAME MANUFACTURER_PART_NUMBER MOUSER_PART_NUMBER   MOUSER_PRICE-STOCK                                                     PROD_ID     SPICEPREFIX TP_SIGNAL_NAME VALUE                  
+
+-------------
+ Capacitors
+-------------
+Op de campus:
+9   100n                    CAP_CERAMIC0603            0603                       C22, C23, C26, C27, C28, C29, C33, C3, C7                                           Ceramic Capacitors                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+2   10n                     CAP_CERAMIC0603            0603                       C30, C31                                                                            Ceramic Capacitors                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+2   10u                     C-EUC0805K                 C0805K                     C2, C6                                                                              CAPACITOR, European symbol                                                                                                                                                                                                                                                                                                                                                                                                C                                                 
+3   10u                     CAP_CERAMIC0603            0603                       C1, C24, C25                                                                        Ceramic Capacitors                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+2   12p                     CAP_CERAMIC0603            0603                       C36, C37                                                                            Ceramic Capacitors                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+4   1u                      CAP_CERAMIC0603            0603                       C21, C32, C38, C41                                                                  Ceramic Capacitors                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+Bestellen:
+2   18p                     CAP_CERAMIC0603            0603                       C34, C35                                                                            Ceramic Capacitors                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+https://www.mouser.be/ProductDetail/KEMET/C0603C180K5RACTU?qs=sGAEpiMZZMs0AnBnWHyRQN7%2FAA2D2lPPejfyn2zexXzJG6Mrpez1tw%3D%3D
+
+------------
+ Weerstanden
+------------
+Op de campus:
+1   220K                    RESISTOR0603               0603                       R5                                                                                  Resistors       
+7   2.2k/2k ook goed        RESISTOR0603               0603                       R2, R15, R18, R19, R20, R21, R23                                                    Resistors                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+1   10Meg                   RESISTOR0603               0603                       R39                                                                                 Resistors                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+5   10k                     RESISTOR0603               0603                       R4, R7, R8, R9, R10                                                                 Resistors                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+1   120                     RESISTOR0603               0603                       R1                                                                                  Resistors                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+1   1                       RESISTOR0603               0603                       R34                                                                                 Resistors                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+1   100                     RESISTOR0603               0603                       R33                                                                                 Resistors                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+1   1Meg                    RESISTOR0603               0603                       R6                                                                                  Resistors                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+Bestellen:
+1   12Meg                   RESISTOR0603               0603                       R29                                                                                 Resistors                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+https://www.mouser.be/ProductDetail/Yageo/AF0603JR-0712ML?qs=sGAEpiMZZMvdGkrng054t3bQBroXiaAZ%2FdQgQXyGGDKBlc%2Flpd4xGA%3D%3D
+
+----------
+ Mosfets
+----------
+3   20V/0.2A/8MHz/1.2Ω/1Vth MOSFET-NCH-RE1C002UN       SOT-416FL                  Q1, Q6, Q8                                                                          N-channel MOSFETs                                                                                                                                                                                                                                                                                                                                                                                             TRANS_14399                            20V/0.2A/8MHz/1.2Ω/1Vth
+https://www.mouser.be/ProductDetail/ROHM-Semiconductor/RE1C002UNTCL?qs=sGAEpiMZZMshyDBzk1%2FWi5brl1xcCtmLX9T5kEFqBHnWEMk%2FgV3G4w%3D%3D
+
+-----------
+ Kompas + accelerometer
+-----------
+1	ICM20948
+https://www.mouser.be/ProductDetail/TDK-InvenSense/ICM-20948?qs=sGAEpiMZZMve4%2FbfQkoj%252BJwQU4m%252BZkcVSWoSqbKWYiU%3D
+
+----------
+ Ferriet
+----------
+1   74279266                74279266                   BEADC1608X100N             FB1                                                                                 WE-CBF Ferrite Bead 0603 1000Ohm 200mA Wurth WE-CBF Series +/-25% Ferrite Multilayer SMD Inductor, 0603 Case, 200mA dc 600m Rdc WE-CBF Ferrite Bead 0603 1000Ohm 200mA Wurth WE-CBF Series +/-25% Ferrite Multilayer SMD Inductor, 0603 Case, 200mA dc 600m Rdc 1mm    Wurth Elektronik  74279266                 710-74279266         https://www.mouser.com/Search/Refine.aspx?Keyword=710-74279266                                                                       
+https://www.mouser.be/ProductDetail/Wurth-Elektronik/74279266?qs=sGAEpiMZZMtdyQheitOmRYpTrBpmB2ZL%252BCwBKoGZgwo%3D
+
+----------
+ Crystals
+----------
+1   FC-135_32.7680KA-A3     FC-135_32.7680KA-A3        FC135327680KAAG0           Y2                                                                                  Crystals 32.768KHz 20ppm 12.5pF -40C -85C                                                                                       Crystals 32.768KHz 20ppm 12.5pF -40C -85C                                                                                       0mm    Epson Timing      FC-135 32.7680KA-A3      732-FC135-32.76KAA3  https://www.mouser.com/Search/Refine.aspx?Keyword=732-FC135-32.76KAA3                                                                
+1   ABM3B-24.000MHZ-B2-T    ABM3B-24.000MHZ-B2-T       ABM3B8000MHZ101UT          Y3                                                                                  Abracon 24MHz Crystal +/-20ppm SMD 5 x 3 x 1.1mm                                                                                Abracon 24MHz Crystal +/-20ppm SMD 5 x 3 x 1.1mm                                                                                1.1mm  ABRACON           ABM3B-24.000MHZ-B2-T     815-ABM3B-24-B2      https://www.mouser.com/Search/Refine.aspx?Keyword=815-ABM3B-24-B2                                                                    
+https://www.mouser.be/ProductDetail/ABRACON/ABM3B-24000MHZ-B2-T?qs=%2Fha2pyFaduiPXs3%2FeWvVmvpjg%2FKHifuyeq9FIEL7lss%3D
+https://www.mouser.be/ProductDetail/Epson-Timing/FC-135-327680KA-A3?qs=sGAEpiMZZMsBj6bBr9Q9aZLqXgWtLYAXgtkp1R7gwzo%3D
+
+---------
+ Button
+---------
+1   PTS815_SJK_250_SMTR_LFS PTS815_SJK_250_SMTR_LFS    PTS815SJK250SMTRLFS        S1                                                                                  Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 250gf, J leads                                                   Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 250gf, J leads                                                   2mm    C & K COMPONENTS  PTS815 SJK 250 SMTR LFS  611-PTS815SJK250SMTR https://www.mouser.com/Search/Refine.aspx?Keyword=611-PTS815SJK250SMTR                                                               
+https://www.mouser.be/ProductDetail/CK/PTS815-SJK-250-SMTR-LFS?qs=sGAEpiMZZMsgGjVA3toVBJB2WnIsM9jSRDBFv8jvqps%3D
+
+---------
+ LDO
+---------
+1   TPS7A0518PDBZR          TPS7A0518PDBZR             SOT95P237X112-3N           IC5                                                                                 1-A, ultra-low-IQ, 200-mA low-dropout (LDO) regulator in a small-sized package                                                  1-A, ultra-low-IQ, 200-mA low-dropout (LDO) regulator in a small-sized package                                                  1.12mm Texas Instruments TPS7A0518PDBZR           595-TPS7A0518PDBZR   https://www.mouser.com/Search/Refine.aspx?Keyword=595-TPS7A0518PDBZR                                                                 
+https://www.mouser.be/ProductDetail/Texas-Instruments/TPS7A0518PDBZR?qs=sGAEpiMZZMsGz1a6aV8DcN9989xQI6%252BFS%252BXCr7vd340%3D
+
+--------
+ Led
+--------
+1   Green/Blue              LED0805                    CHIPLED_0805               PWR_LED                                                                             LED                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+--------
+ LoRa
+--------
+Waarschijnlijk op de campus?
+1   RN2483 LoRa module	
+1   ANTENNA868              ANTENNA868                 CERAMIC-ANTENNA            U$2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+1   WE-MK_0603_744786118    WE-MK_0603_744786118       WE-MK_0603                 L1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+2   Caps bij LoRa module    C-EUC0603K                 C0603K                     C4, C5                                                                              CAPACITOR, European symbol       

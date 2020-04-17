@@ -133,14 +133,14 @@ void ICM_20948_Init ()
 	delay(100);
 
 	/* Enable all ICM_20948 sensors */
-	ICM_20948_sensorEnable(true, true, true);
+	ICM_20948_sensorEnable(false, true, true);
 	delay(100);
 
 	/* Set ICM_20948 gyro and accel sample rate to 50Hz */
-	ICM_20948_sampleRateSet(75);
+	ICM_20948_sampleRateSet(100);
 
 	/* Set full scale range: gyro & accel */
-	ICM_20948_gyroFullscaleSet(ICM_20948_GYRO_FULLSCALE_2000DPS);
+//	ICM_20948_gyroFullscaleSet(ICM_20948_GYRO_FULLSCALE_2000DPS);
 	ICM_20948_accelFullscaleSet(ICM_20948_ACCEL_FULLSCALE_4G);
 
 	/* Setup 50us interrupt */
@@ -191,7 +191,7 @@ void ICM_20948_Init ()
 
 	BSP_LedSet(1);
 ////////////////////////////////////
-//	ICM_20948_calibrate_mag( magOffset, magScale );
+	ICM_20948_calibrate_mag( magOffset, magScale );
 ////////////////////////////////////
 	BSP_LedClear(1);
 
@@ -1307,7 +1307,7 @@ uint32_t ICM_20948_reset_mag(void) {
 /* Embedded 2 */
 void ICM_20948_magn_to_angle(float *magn, float *angle){
 
-	angle[0] = atan2(magn[1], magn[0]) * M_PI/180.0f;
+	angle[0] = atan2(magn[1], magn[0]) * 180.0f / M_PI;
 
 }
 

@@ -107,66 +107,46 @@ float angle[1];
 
 /*************************************************/
 /*************************************************/
-void CheckIMUidle( void )
-{
-
-	float mean_gyro = (uint8_t) ( data.ICM_20948_gyro[0] + data.ICM_20948_gyro[1] + data.ICM_20948_gyro[2] ) / 3;
-
-	/* Add 1 sec to the count of idle seconds */
-	if( mean_gyro < 0.1 )
-	{
-		idle_count++;
-	}else{ /* If there is movement, reset idle seconds */
-		idle_count = 0;
-	}
-
-	if( idle_count > 60 )
-	{
-		idle_count = 0;
-		/* Dont't check idle state in sleep */
-		RTCDRV_StopTimer( IMU_Idle_Timer );
-		/* Stop generating interrupts */
-		ICM_20948_interruptEnable(false, false);
-		appState = SLEEP;
-		_sleep = true;
-	}
-
-/* For visual representation where in the code */
-	BSP_LedToggle(1);
-}
+//void CheckIMUidle( void )
+//{
+//
+//	float mean_gyro = (uint8_t) ( data.ICM_20948_gyro[0] + data.ICM_20948_gyro[1] + data.ICM_20948_gyro[2] ) / 3;
+//
+//	/* Add 1 sec to the count of idle seconds */
+//	if( mean_gyro < 0.1 )
+//	{
+//		idle_count++;
+//	}else{ /* If there is movement, reset idle seconds */
+//		idle_count = 0;
+//	}
+//
+//	if( idle_count > 60 )
+//	{
+//		idle_count = 0;
+//		/* Dont't check idle state in sleep */
+//		RTCDRV_StopTimer( IMU_Idle_Timer );
+//		/* Stop generating interrupts */
+//		ICM_20948_interruptEnable(false, false);
+//		appState = SLEEP;
+//		_sleep = true;
+//	}
+//
+///* For visual representation where in the code */
+//	BSP_LedToggle(1);
+//}
 void measure( void )
 {
 
 	/* Read all sensors */
-	ICM_20948_gyroDataRead(data.ICM_20948_gyro);
+//	ICM_20948_gyroDataRead(data.ICM_20948_gyro);
 	ICM_20948_accelDataRead(data.ICM_20948_accel);
 	ICM_20948_magDataRead(data.ICM_20948_magn);
-
-//	 TODO: embedded ICM_20948_magn_to_angle( ICM_20948_magn, ICM_20948_magn_angle );
-
-//	uint32_t start = millis();
-
-	/* Sensor fusion */
-//	MadgwickAHRSupdate(data.ICM_20948_gyro[0] * M_PI / 180.0f,
-//			data.ICM_20948_gyro[1] * M_PI / 180.0f,
-//			data.ICM_20948_gyro[2] * M_PI / 180.0f,
-//			data.ICM_20948_accel[0], data.ICM_20948_accel[1],
-//			data.ICM_20948_accel[2], data.ICM_20948_magn[0], data.ICM_20948_magn[1], data.ICM_20948_magn[2]);
-//	QuaternionsToEulerAngles(data.ICM_20948_euler_angles);
-//
-
-
-//	uint32_t duration = millis() - start;
-
-
 
 	ICM_20948_magn_to_angle(data.ICM_20948_magn, angle);
 
 
 #if DEBUG_DBRPINT == 0
-
-	dbprintlnInt( (int) (angle[0] * 1000) );
-
+	dbprintlnInt( (int) (angle[0]) );
 #endif
 
 	/* Toggle Led when done */
@@ -176,6 +156,9 @@ void measure( void )
 	GPIO_PinOutSet(gpioPortE, 11);
 	GPIO_PinOutClear(gpioPortE, 11);
 }
+
+
+
 
 
 /**************************************************************************//**
@@ -257,7 +240,7 @@ int main(void)
 			}
 
 			/* Timer for checking if IMU is idle */
-			  RTCDRV_StartTimer( IMU_Idle_Timer, rtcdrvTimerTypePeriodic, 1000, (RTCDRV_Callback_t)CheckIMUidle, NULL);
+//			  RTCDRV_StartTimer( IMU_Idle_Timer, rtcdrvTimerTypePeriodic, 1000, (RTCDRV_Callback_t)CheckIMUidle, NULL);
 
 			appState = SYS_IDLE;
 		}
@@ -374,7 +357,7 @@ int main(void)
 
 
 			/* Timer for checking if IMU is idle */
-			RTCDRV_StartTimer( IMU_Idle_Timer, rtcdrvTimerTypePeriodic, 1000, (RTCDRV_Callback_t)CheckIMUidle, NULL);
+//			RTCDRV_StartTimer( IMU_Idle_Timer, rtcdrvTimerTypePeriodic, 1000, (RTCDRV_Callback_t)CheckIMUidle, NULL);
 
 			/* Set interrupt to trigger every 100ms when the data is ready */
 			IMU_MEASURING = true;
