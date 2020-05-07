@@ -103,37 +103,6 @@ RTCDRV_TimerID_t IMU_Idle_Timer;
 /* Initialize angle */
 float angle[1];
 
-
-
-/*************************************************/
-/*************************************************/
-//void CheckIMUidle( void )
-//{
-//
-//	float mean_gyro = (uint8_t) ( data.ICM_20948_gyro[0] + data.ICM_20948_gyro[1] + data.ICM_20948_gyro[2] ) / 3;
-//
-//	/* Add 1 sec to the count of idle seconds */
-//	if( mean_gyro < 0.1 )
-//	{
-//		idle_count++;
-//	}else{ /* If there is movement, reset idle seconds */
-//		idle_count = 0;
-//	}
-//
-//	if( idle_count > 60 )
-//	{
-//		idle_count = 0;
-//		/* Dont't check idle state in sleep */
-//		RTCDRV_StopTimer( IMU_Idle_Timer );
-//		/* Stop generating interrupts */
-//		ICM_20948_interruptEnable(false, false);
-//		appState = SLEEP;
-//		_sleep = true;
-//	}
-//
-///* For visual representation where in the code */
-//	BSP_LedToggle(1);
-//}
 void measure( void )
 {
 
@@ -143,7 +112,6 @@ void measure( void )
 	ICM_20948_magDataRead(data.ICM_20948_magn);
 
 	ICM_20948_magn_to_angle(data.ICM_20948_magn, angle);
-
 
 #if DEBUG_DBRPINT == 0
 	dbprintlnInt( (int) (angle[0]) );
@@ -156,10 +124,6 @@ void measure( void )
 	GPIO_PinOutSet(gpioPortE, 11);
 	GPIO_PinOutClear(gpioPortE, 11);
 }
-
-
-
-
 
 /**************************************************************************//**
  * @brief
@@ -239,9 +203,6 @@ int main(void)
 				delay(100);
 			}
 
-			/* Timer for checking if IMU is idle */
-//			  RTCDRV_StartTimer( IMU_Idle_Timer, rtcdrvTimerTypePeriodic, 1000, (RTCDRV_Callback_t)CheckIMUidle, NULL);
-
 			appState = SYS_IDLE;
 		}
 			break;
@@ -251,11 +212,7 @@ int main(void)
 
 			measure();
 
-			/* If imu is idle, give it the chance to go to sleep */
-//			if(!_sleep)
-//			{
-				appState = SYS_IDLE;
-//			}
+			appState = SYS_IDLE;
 		}
 			break;
 			/***************************/
@@ -274,17 +231,12 @@ int main(void)
 			/***************************/
 		case SLEEP:
 		{
-			//RTCDRV_StartTimer( IMU_Idle_Timer, rtcdrvTimerTypeOneshot, 2000, test, NULL);
-
-
-
 			/* Wake on motion: 50 mg's (0.05 G) */
 			ICM_20948_wakeOnMotionITEnable(true, 50, 50);
 			delay(100);
 
 			/* Disable Systicks before going to sleep */
 			EMU_EnterEM2(true);
-
 
 			///////////////////////////////////////////
 			/* When waking up, initialize everything */
@@ -314,13 +266,9 @@ int main(void)
 			/* Setup 50us interrupt */
 			ICM_20948_latchEnable(true);
 
-		    // TODO bandwidth gyro + accel
-
-
 		    /* Auto select best available clock source PLL if ready, else use internal oscillator */
 		    ICM_20948_registerWrite(ICM_20948_REG_PWR_MGMT_1, ICM_20948_BIT_CLK_PLL);
 		    delay(100);
-
 
 			/* Magnetometer */
 			/* IIC passtrough: magnetometer can be accessed on IIC bus */
@@ -354,10 +302,6 @@ int main(void)
 			/* Update data by reading through till ST2 register */
 			ICM_20948_read_mag_register(0x11, 8, temp);
 			delay(100);
-
-
-			/* Timer for checking if IMU is idle */
-//			RTCDRV_StartTimer( IMU_Idle_Timer, rtcdrvTimerTypePeriodic, 1000, (RTCDRV_Callback_t)CheckIMUidle, NULL);
 
 			/* Set interrupt to trigger every 100ms when the data is ready */
 			IMU_MEASURING = true;
@@ -407,26 +351,9 @@ void GPIO_EVEN_IRQHandler(void)
 	dbprint("Interrupt fired! 1");
 #endif /* DEBUG_DBPRINT */
 
-//	measure_send();
 
-//	ICM_20948_interruptStatusRead(interruptStatus);
-//
-//	/* AND with mask to check only bit 4 of byte 1 */
-//	if( (interruptStatus[0] & 8) == 8 ) /* If interrupt is bit WOM interrupt */
-//	{
-//		appState = SLEEP;
-//	}else{
+	appState = SENSORS_READ;
 
-	/* If sensor is not trying to sleep, read sensors
-	 * Otherwise bug when trying to sleep but still last interrupts occurring, sensor won't go to sleep
-	 */
-//	if(appState != SLEEP)
-//	{
-		appState = SENSORS_READ;
-//	}
-
-
-//	}
 }
 
 /**************************************************************************//**
