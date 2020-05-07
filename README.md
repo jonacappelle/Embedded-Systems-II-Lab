@@ -3,37 +3,33 @@
 ![Github contributors](https://img.shields.io/github/contributors/jonacappelle/Embedded-Systems-II-Lab)
 # LAB: Embedded Systems II
 
+## SOFTWARE
+
+- [IMU](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Jona%20-%20IMU%20and%20Main%20PCB/Embedded_II_ICM_20948)
+- [Game](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Niels%20-%20Code%20spel/SLSTK3400A_blink)
+- [LoRa](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Pieter%20-%20Connectivity%20and%20Visualisation)
+
 ## HARDWARE
+
+[Main board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Jona%20-%20IMU%20and%20Main%20PCB/EFM32_ICM20948_PCB)  
+[Energy harvesting](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Daan%20-%20VoedingDesign%20PCB/schema_pcb)
+
 ### MAIN BOARD: µC + Compass + LoRa
-[Main board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)  
 
 <p align="center">
-  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/EFM32_ICM20948_PCB/svg_renders/top.svg">
+  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/Jona%20-%20IMU%20and%20Main%20PCB/EFM32_ICM20948_PCB/svg_renders/top.svg">
 </p>
 <p align="center">
-  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/EFM32_ICM20948_PCB/svg_renders/bottom.svg">
+  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/Jona%20-%20IMU%20and%20Main%20PCB/EFM32_ICM20948_PCB/svg_renders/bottom.svg">
 </p>
 
 ### POWER BOARD
-[Power board](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Hardware)
 
 <p align="center">
-  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/VoedingDesign_pcb/renders/top.svg">
+  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/Daan%20-%20VoedingDesign%20PCB/renders/top.svg">
 </p>
 <p align="center">
-  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/VoedingDesign_pcb/renders/bottom.svg">
+  <img width="500" src="https://github.com/jonacappelle/Embedded-Systems-II-Lab/blob/master/Daan%20-%20VoedingDesign%20PCB/renders/bottom.svg">
 </p>
 
-### Main board
 
-- EFM32HG322F64G-C-QFP48R
-
-
-### Tilt compensated compass
-
-- ICM 20948
-
-## SOFTWARE
-
-- [Tilt Compensated Compass](https://github.com/jonacappelle/Embedded-Systems-II-Lab/tree/master/Embedded_II_ICM_20948)
-- [RFID]()
